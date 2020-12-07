@@ -1,0 +1,42 @@
+
+
+.news {
+    max-width: 500px;
+    padding: 30px;
+    border: 1px solid #e4eded;
+    border-radius: 5px;
+    margin: 0 50px;
+  }
+  
+  .news__title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e4eded
+  }
+  
+  .head__text {
+    margin-top: 30px;
+  }
+  
+  .news__desc {
+    padding-top: 10px;
+    line-height: 25px;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  
+  .news__author {
+    margin-right: 10px;
+    color: purple;
+  }
+  
+  .news__published {
+    margin-right: 10px;
+  }
+  
+  .news__source,
+  .news__published {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(122, 122, 122);
+  }
+
