@@ -10,7 +10,7 @@ export const NewsContextProvider = (props) => {
   useEffect(() => {
     axios
       .get(
-        `http://newsapi.org/v2/everything?q=bitcoin&from=2020-11-07&sortBy=publishedAt&apiKey=${apiKey}`
+        `http://newsapi.org/v2/everything?domains=wsj.com&apiKey=${apiKey}`
       )
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));

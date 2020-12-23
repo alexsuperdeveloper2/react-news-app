@@ -1,8 +1,20 @@
-import React from "react";
+import React , {useState} from "react";
 import './NewsArticle.css'
 
 
+
+
 function NewsArticle({ data }) {
+
+  const [like , setLike] = useState(false)
+
+  const handlerLike = () => {
+      setLike(
+        !like
+      )
+  }
+
+
   return (
     
       <div className="news">
@@ -11,6 +23,9 @@ function NewsArticle({ data }) {
       <span className="news__author">{data.author}</span> <br />
       <span className="news__published">{data.publishedAt}</span>
       <span className="news__source">{data.source.name}</span>
+      <br/>
+      <br/>
+      <i className={like ? 'far fa-heart' : 'fas fa-heart' }  onClick={handlerLike} > Like</i>
     </div>
     
   );

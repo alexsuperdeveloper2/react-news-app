@@ -76,12 +76,13 @@
     width: 100%;
     max-width: 310px;
   }
-  .wrapper .content .login-form .input-group input {
+  .wrapper .content .login-form .input-group input  {
     padding: 15px;
     font-size: 13px;
     border: 1px solid #e4eff8;
     tranistion: border .5s;
     -webkit-tranistion: border .5s;
+    
   }
   .wrapper .content .login-form .input-group input:focus {
     outline: 0;
@@ -123,3 +124,9 @@
     }
   }
   
+
+  .input-group{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #f00e0e;
+  }
